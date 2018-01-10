@@ -2,7 +2,7 @@
 These are the buggy processes I have put up for review while automating the processes for my Thesis code.
 
 
-Process: Take a list of CSVs (global climate model outputs), create XY event layer for each, and then create a set of raster for a list of variables contained in the  XY event layer.
+Process: Take a list of CSVs (global climate model outputs), create XY event layer for each, and then create a set of raster for a list of variables contained in each  XY event layer.
 
 Problem:  Having issues iterating the proccess through my list of CSVs and Variables. For loops maybe not working?
 

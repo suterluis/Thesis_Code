@@ -16,7 +16,7 @@ print "imported"
 #set workspace
 arcpy.env.workspace = "R:\\Streletskiy Research\\Luis_Files\\Thesis\GCM_Results\\CSVs\\2006_2050"
 arcpy.env.overwriteOutput = True
-print 'workspace set"
+print "workspace set"
 
 # Script arguments
 files = ["CanESM_2006_2050.csv", "CSIRO_2006_2050.csv", "GFDL_2006_2050.csv", "HadGEM_2006_2050.csv", "IPSL_2006_2050.csv", "NorESM_2006_2050.csv"]

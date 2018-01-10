@@ -1,5 +1,5 @@
 # Thesis_Code
-These are the buggy processes I have put up for review while automating the processes for my Thesis code.
+These are the buggy processes I have put up for review while automating the processing for my Thesis code.
 
 
 Process: Take a list of CSVs (global climate model outputs), create XY event layer for each, and then create a set of raster for a list of variables contained in each  XY event layer.

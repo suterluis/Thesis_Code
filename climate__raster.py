@@ -31,6 +31,7 @@ save_file = "R:\\Streletskiy Research\\Luis_Files\\Thesis\GCM_Results\\TIFFs\\20
 
 print "variables set"
 
+def climate_rasterization(files, Z_value_field):
 for file in files:
 	arcpy.MakeXYEventLayer_management(file, X_Field, Y_Field, xy_output, spRef)
 	for Z_value in Z_value_field:

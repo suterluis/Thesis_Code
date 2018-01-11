@@ -32,11 +32,13 @@ save_file = "R:\\Streletskiy Research\\Luis_Files\\Thesis\GCM_Results\\TIFFs\\20
 print "variables set"
 
 def climate_rasterization(files, Z_value_field):
-for file in files:
-	arcpy.MakeXYEventLayer_management(file, X_Field, Y_Field, xy_output, spRef)
-	for Z_value in Z_value_field:
-		arcpy.gp.NaturalNeighbor_sa(xy_output, Z_value, save_file, "R:\\Streletskiy Research\\Luis_Files\\Thesis\\GIS\\Rasterization_Files\\1x1_standard").format(file Z_value)
-	
+	for file in files:
+		arcpy.MakeXYEventLayer_management(file, X_Field, Y_Field, xy_output, spRef)
+		for Z_value in Z_value_field:
+			arcpy.gp.NaturalNeighbor_sa(xy_output, Z_value, save_file, "R:\\Streletskiy Research\\Luis_Files\\Thesis\\GIS\\Rasterization_Files\\1x1_standard").format(file Z_value)
+
+climate_rasterization(files, Z_Value_field)
+
 print "Done"
 	
 
